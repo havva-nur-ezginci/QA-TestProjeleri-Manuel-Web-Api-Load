@@ -1,0 +1,27 @@
+{
+  "name": "petstore_api_chakram_automatin",
+  "version": "1.0.0",
+  "description": "Chakram Api Testing",
+  "main": "",
+  "directories": {
+    "test": "Tests/"
+  },
+  "dependencies": {
+    "chakram": "^1.5.0",
+    "mocha": "^10.2.0",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.25.0",
+    "allure-mocha": "^2.10.0",
+    "mochawesome": "^7.1.3"
+  },
+  "scripts": {
+    "test": "mocha tests/ --timeout 90000  --exit"
+  },
+  "keywords": [
+    "apitest"
+  ],
+  "author": "",
+  "license": "ISC"
+}
