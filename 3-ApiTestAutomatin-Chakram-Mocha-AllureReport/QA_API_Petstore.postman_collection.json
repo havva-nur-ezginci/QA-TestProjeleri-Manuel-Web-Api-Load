@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "18df93de-e861-46ec-ac80-a0c8f3a9dad1",
+		"name": "QA_API_Petstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19502451"
+	},
+	"item": [
+		{
+			"name": "PetGetFindByStatus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PetBaseUrl}}/findByStatus?status=pending",
+					"host": [
+						"{{PetBaseUrl}}"
+					],
+					"path": [
+						"findByStatus"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "pending"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetPostCreate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 829,\n  \"category\": {\n    \"id\": 3,\n    \"name\": \"string\"\n  },\n  \"name\": \"Kurt\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"deneme\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+				},
+				"url": {
+					"raw": "{{PetBaseUrl}}",
+					"host": [
+						"{{PetBaseUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetPostUploadImage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "additionalMetadata",
+							"value": "Bu bir form data body denemesidir.",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"contentType": "image/jpeg",
+							"type": "file",
+							"src": "/C:/Users/havvanur/Desktop/3-petstore_api_chakram_automatin/Tests/kurt.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{PetBaseUrl}}/829/uploadImage",
+					"host": [
+						"{{PetBaseUrl}}"
+					],
+					"path": [
+						"829",
+						"uploadImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetPutUpdate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 829,\n  \"category\": {\n    \"id\": 3,\n    \"name\": \"Name değiştirildi\"\n  },\n  \"name\": \"Kurt\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"deneme\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+				},
+				"url": {
+					"raw": "{{PetBaseUrl}}",
+					"host": [
+						"{{PetBaseUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetGetById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PetBaseUrl}}/829",
+					"host": [
+						"{{PetBaseUrl}}"
+					],
+					"path": [
+						"829"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetPostUpdateFormData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "name post ile değiştirildi.",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "pending",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{PetBaseUrl}}/829",
+					"host": [
+						"{{PetBaseUrl}}"
+					],
+					"path": [
+						"829"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PetDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PetBaseUrl}}/829",
+					"host": [
+						"{{PetBaseUrl}}"
+					],
+					"path": [
+						"829"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StorePostOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 3,\n  \"petId\": 555,\n  \"quantity\": 2,\n  \"shipDate\": \"2023-12-28T10:53:47.511Z\",\n  \"status\": \"placed\",\n  \"complete\": true\n}"
+				},
+				"url": {
+					"raw": "{{StoreBaseUrl}}/order",
+					"host": [
+						"{{StoreBaseUrl}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoreGetOrderID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{StoreBaseUrl}}/order/3",
+					"host": [
+						"{{StoreBaseUrl}}"
+					],
+					"path": [
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoreDeleteOrderID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{StoreBaseUrl}}/order/3",
+					"host": [
+						"{{StoreBaseUrl}}"
+					],
+					"path": [
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StoreGetInventory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{StoreBaseUrl}}/inventory",
+					"host": [
+						"{{StoreBaseUrl}}"
+					],
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserPostCreateWithArray",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"id\": 44,\n      \"username\": \"Test username\",\n      \"firstName\": \"Test firstname\",\n      \"lastName\": \"Test lastname\",\n      \"email\": \"test@email.com\",\n      \"password\": \"test password\",\n      \"phone\": \"0123456789\",\n      \"userStatus\": 1\n    },\n    {\n      \"id\": 45,\n      \"username\": \"Test2 username\",\n      \"firstName\": \"Test2 firstname\",\n      \"lastName\": \"Test2 lastname\",\n      \"email\": \"test2@email.com\",\n      \"password\": \"test2 password\",\n      \"phone\": \"2-0123456789\",\n      \"userStatus\": 0\n    }\n  ]"
+				},
+				"url": {
+					"raw": "{{UserBaseUrl}}/createWithArray",
+					"host": [
+						"{{UserBaseUrl}}"
+					],
+					"path": [
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserPostCreateWithList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n      \"id\": 44,\n      \"username\": \"Test username\",\n      \"firstName\": \"Test firstname\",\n      \"lastName\": \"Test lastname\",\n      \"email\": \"test@email.com\",\n      \"password\": \"test password\",\n      \"phone\": \"0123456789\",\n      \"userStatus\": 1\n    },\n    {\n      \"id\": 45,\n      \"username\": \"Test2 username\",\n      \"firstName\": \"Test2 firstname\",\n      \"lastName\": \"Test2 lastname\",\n      \"email\": \"test2@email.com\",\n      \"password\": \"test2 password\",\n      \"phone\": \"2-0123456789\",\n      \"userStatus\": 0\n    }\n  ]"
+				},
+				"url": {
+					"raw": "{{UserBaseUrl}}/createWithList",
+					"host": [
+						"{{UserBaseUrl}}"
+					],
+					"path": [
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserGetUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{UserBaseUrl}}/Test%20username",
+					"host": [
+						"{{UserBaseUrl}}"
+					],
+					"path": [
+						"Test%20username"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserPutUpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 44,\n  \"username\": \"Testusername\",\n  \"firstName\": \"Test firstname\",\n  \"lastName\": \"Test lastname\",\n  \"email\": \"testyeni@email.com\",\n  \"password\": \"TestPassword\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}"
+				},
+				"url": {
+					"raw": "{{UserBaseUrl}}/Test%20username",
+					"host": [
+						"{{UserBaseUrl}}"
+					],
+					"path": [
+						"Test%20username"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{UserBaseUrl}}/Testusername",
+					"host": [
+						"{{UserBaseUrl}}"
+					],
+					"path": [
+						"Testusername"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserGetLogin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{UserBaseUrl}}/login?username=Test2%20username&password=test2%20password",
+					"host": [
+						"{{UserBaseUrl}}"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Test2%20username"
+						},
+						{
+							"key": "password",
+							"value": "test2%20password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserGetLogout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{UserBaseUrl}}/logout",
+					"host": [
+						"{{UserBaseUrl}}"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserPostCreateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 36,\n  \"username\": \"qa-nur\",\n  \"firstName\": \"qa firstname\",\n  \"lastName\": \"qa lastname\",\n  \"email\": \"qa-email@testemail.com\",\n  \"password\": \"qa_password\",\n  \"phone\": \"9876543210\",\n  \"userStatus\": 1\n}"
+				},
+				"url": {
+					"raw": "{{UserBaseUrl}}",
+					"host": [
+						"{{UserBaseUrl}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "PetBaseUrl",
+			"value": "https://petstore.swagger.io/v2/pet",
+			"type": "string"
+		},
+		{
+			"key": "StoreBaseUrl",
+			"value": "https://petstore.swagger.io/v2/store",
+			"type": "string"
+		},
+		{
+			"key": "UserBaseUrl",
+			"value": "https://petstore.swagger.io/v2/user",
+			"type": "string"
+		}
+	]
+}
