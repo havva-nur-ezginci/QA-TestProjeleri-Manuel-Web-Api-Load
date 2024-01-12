@@ -11,7 +11,8 @@ proje yolunda cmd => allure serve allure-results
 
 komutu çalıştırarak detaylı rapor görülebilir.
 
-3- Api testinde kullanılan site : https://petstore.swagger.io/
+3- Api test projesinde Chakram, Mocha, AllureReport kullanılmıştır. 
+Api testinde kullanılan site : https://petstore.swagger.io/
 
 chakram ile terminalden test çalıştırma  => npm test
 
