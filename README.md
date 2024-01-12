@@ -21,7 +21,8 @@ test çalıştır => node runner.js
 
 rapor oluştur => npx allure serve allure-results
 
-4- Yük testinde kullanılan site : https://petstore.swagger.io/
+4- Load test projesinde locust kullanılmıştır.
+Yük testinde kullanılan site : https://petstore.swagger.io/
 
 Locust load test raporlarına (.html) indirilip bakılmalıdır.
 
