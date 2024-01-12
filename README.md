@@ -24,3 +24,10 @@ rapor oluştur => npx allure serve allure-results
 4- Yük testinde kullanılan site : https://petstore.swagger.io/
 
 Locust load test raporlarına (.html) indirilip bakılmalıdır.
+
+sanal oluşturulmuş venv klasörü kullanılmak istenirse
+
+virtual environment kurulu olmalıdır => pip3 install virtualenv
+
+venv klasörünü kullanmak için proje yolunda => venv\Scripts\activate
+komutunu çalıştırarak aktif hale getirilmelidir.
