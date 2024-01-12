@@ -1,5 +1,7 @@
 1- Manuel test için kullanılan site : https://tr.surveymonkey.com/
 
+Manuel test raporları TestRail de oluşturulmuştur.
+
 2- Web otomasyon projesinde Selenium, TestNg, AllureReport teknolojileri kullanılmıştır.
 
 otomasyon da kullanılan site : https://www.dr.com.tr/
