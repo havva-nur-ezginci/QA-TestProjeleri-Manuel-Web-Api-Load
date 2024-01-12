@@ -53,7 +53,7 @@ public class BaseTest extends Data {
 
     @AfterClass
     public static void afterTest(){
-        //driver.quit();
+        driver.quit();
     }
 
 }
