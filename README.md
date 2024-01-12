@@ -2,7 +2,7 @@
 
 Manuel test raporları TestRail de oluşturulmuştur.
 
-2- Web otomasyon projesinde Selenium, TestNg, AllureReport teknolojileri kullanılmıştır.
+2- Web otomasyon projesinde Selenium, TestNG, AllureReport teknolojileri kullanılmıştır.
 
 otomasyon da kullanılan site : https://www.dr.com.tr/
 allure-result altında test sonuçları bulunmaktadır.
