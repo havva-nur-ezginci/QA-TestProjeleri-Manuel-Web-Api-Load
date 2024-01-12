@@ -9,7 +9,7 @@ allure-result altında test sonuçları bulunmaktadır.
 
 proje yolunda cmd => allure serve allure-results 
 
-komutu çalıştırarak detaylı rapor göülebilir.
+komutu çalıştırarak detaylı rapor görülebilir.
 
 3- Api testinde kullanılan site : https://petstore.swagger.io/
 
