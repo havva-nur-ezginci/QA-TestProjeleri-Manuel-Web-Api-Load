@@ -35,4 +35,4 @@ venv klasörünü kullanmak için proje yolunda => venv\Scripts\activate
 komutunu çalıştırarak aktif hale getirilmelidir.
 
 
-**Diğer test Repolarım:** [Selenium Test](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/com.MavenSelenium/src/test/java) , [API Test](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/API_Testing/src/test/java)
+**Diğer test Repolarım:** [Web Test](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/com.MavenSelenium/src/test/java) , [API Test](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/API_Testing/src/test/java)
