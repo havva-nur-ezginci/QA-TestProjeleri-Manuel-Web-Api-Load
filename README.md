@@ -10,7 +10,7 @@ otomasyon da kullanılan site : https://www.dr.com.tr/
 
 allure-result altında test sonuçları bulunmaktadır.
 
-proje yolunda cmd:
+Proje yolunda cmd:
 ```sh
 allure serve allure-results
 ```
@@ -19,6 +19,7 @@ komutu çalıştırarak detaylı rapor görülebilir.
 
 ## API Test
 3- Api test projesinde **Chakram, Mocha, AllureReport** kullanılmıştır. 
+
 Api testinde kullanılan site : https://petstore.swagger.io/
 
 chakram ile terminalden test çalıştırma:
@@ -26,7 +27,7 @@ chakram ile terminalden test çalıştırma:
  npm test
  ```
 
-mocha - allureReport ile test ve rapor oluşturma:
+**Mocha - AllureReport** ile test ve rapor oluşturma:
 
 Test çalıştır: 
 ```sh 
@@ -44,7 +45,7 @@ Yük testinde kullanılan site : https://petstore.swagger.io/
 
 Locust load test raporlarına (.html) indirilip bakılmalıdır.
 
-sanal oluşturulmuş venv klasörü kullanılmak istenirse
+Sanal oluşturulmuş venv klasörü kullanılmak istenirse
 
 virtual environment kurulu olmalıdır :
 ```sh
