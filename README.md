@@ -34,5 +34,8 @@ virtual environment kurulu olmalıdır => pip3 install virtualenv
 venv klasörünü kullanmak için proje yolunda => venv\Scripts\activate
 komutunu çalıştırarak aktif hale getirilmelidir.
 
+**İlgili Projeler:**
 
-**Diğer test Repolarım:** [Web Test](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/com.MavenSelenium/src/test/java) , [API Test](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/API_Testing/src/test/java)
+- [Web Test Projesi (Selenium, JUnit, TestNG ve Maven)](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/com.MavenSelenium/src/test/java)
+- [API Test Projesi (Postman ve RestAssured)](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/API_Testing/src/test/java)
+
