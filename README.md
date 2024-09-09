@@ -9,7 +9,10 @@ Manuel test raporları **TestRail** de oluşturulmuştur.
 otomasyon da kullanılan site : https://www.dr.com.tr/
 allure-result altında test sonuçları bulunmaktadır.
 
-proje yolunda cmd => ``` allure serve allure-results ```
+proje yolunda cmd => 
+```sh
+allure serve allure-results
+```
 
 komutu çalıştırarak detaylı rapor görülebilir.
 
@@ -17,13 +20,19 @@ komutu çalıştırarak detaylı rapor görülebilir.
 3- Api test projesinde **Chakram, Mocha, AllureReport** kullanılmıştır. 
 Api testinde kullanılan site : https://petstore.swagger.io/
 
-chakram ile terminalden test çalıştırma  => npm test
+chakram ile terminalden test çalıştırma  =>
+```sh 
+ npm test
+ ```
 
 mocha - allureReport ile test ve rapor oluşturma:
 
-test çalıştır => node runner.js
+Test çalıştır => ```node runner.js```
 
-rapor oluştur => npx allure serve allure-results
+Rapor oluştur => 
+```sh
+npx allure serve allure-results
+```
 
 ## Yük Test
 4- Load test projesinde **Locust** kullanılmıştır.
@@ -36,9 +45,13 @@ sanal oluşturulmuş venv klasörü kullanılmak istenirse
 virtual environment kurulu olmalıdır => 
 ```sh
  pip3 install virtualenv
-'''
+```
 
-venv klasörünü kullanmak için proje yolunda => venv\Scripts\activate
+venv klasörünü kullanmak için proje yolunda => 
+```sh 
+venv\Scripts\activate
+```
+
 komutunu çalıştırarak aktif hale getirilmelidir.
 
 ## İlgili Projeler:
