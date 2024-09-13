@@ -62,5 +62,5 @@ komutunu çalıştırarak aktif hale getirilmelidir.
 ## İlgili Projeler:
 
 - [Web Test Projesi (Selenium, JUnit, TestNG ve Maven)](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/com.MavenSelenium/src/test/java)
-- [API Test Projesi (Postman, RestAssured, Map, Pojo)](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/API_Testing/src/test/java)
+- [API Test Projesi (Postman, RestAssured, Map, Pojo, JsonObject, JUnit)](https://github.com/havva-nur-ezginci/Java_Test_Projects/tree/master/API_Testing/src/test/java)
 
