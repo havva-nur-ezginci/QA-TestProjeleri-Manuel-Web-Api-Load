@@ -22,6 +22,12 @@ komutu çalıştırarak detaylı rapor görülebilir.
 
 Api testinde kullanılan site : https://petstore.swagger.io/
 
+[**Install Node.js**](https://nodejs.org/en/download/)
+
+**Chakram Install**
+```sh 
+npm install chakram
+ ```
 chakram ile terminalden test çalıştırma:
 ```sh 
  npm test
@@ -45,6 +51,8 @@ Yük testinde kullanılan site : https://petstore.swagger.io/
 
 Locust load test raporlarına (.html) indirilip bakılmalıdır.
 
+ [**Python Install**](https://www.python.org/downloads)
+
 Sanal oluşturulmuş venv klasörü kullanılmak istenirse
 
 virtual environment kurulu olmalıdır :
@@ -56,8 +64,11 @@ venv klasörünü kullanmak için proje yolunda :
 ```sh 
 venv\Scripts\activate
 ```
-
 komutunu çalıştırarak aktif hale getirilmelidir.
+
+```sh 
+pip install locust
+```
 
 ## İlgili Projeler:
 
